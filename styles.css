@@ -14,7 +14,7 @@ body{
 .hero{
   height:100vh;
   position: relative;
-  background-image: url("Assets/MicaelaMongelliboliche.png");
+  background-image: url("assets/MicaelaMongelliboliche.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -483,3 +483,4 @@ footer{
   50%  { transform: translateX(10%)  rotate(10deg); opacity:0.95; }
   100% { transform: translateX(35%)  rotate(10deg); opacity:0.55; }
 }
+
