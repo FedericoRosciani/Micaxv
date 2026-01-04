@@ -14,7 +14,7 @@ body{
 .hero{
   height:100vh;
   position: relative;
-  background-image: url("assets/MicaelaMongelliboliche.png");
+  background-image: url("Assets/MicaelaMongelliboliche.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -484,3 +484,74 @@ footer{
   100% { transform: translateX(35%)  rotate(10deg); opacity:0.55; }
 }
 
+
+/* AGREGAR AL FINAL DE styles.css */
+.final-message {
+  padding: 90px 20px 80px;
+  text-align: center;
+  margin: 0;
+  background: linear-gradient(
+    to bottom,
+    #111111 0%,     /* mismo gris oscuro del countdown */
+    #0e0e0e 25%,
+    #121212 50%,
+    #020202 70%,
+    #050505 85%,
+    #000000 90%,
+    #000000 100%    /* termina en negro pleno */
+  );
+}
+
+
+
+.final-message::before,
+.final-message::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 1px;
+  background: rgba(200,181,138,0.6);
+}
+
+.final-message::before {
+  top: 50%;
+  margin-top: -55px;
+}
+
+.final-message::after {
+  top: 50%;
+  margin-top: 55px;
+}
+
+
+.final-inner {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.final-text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(22px, 3.2vw, 30px); /* más chica */
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0.3px;
+  color: rgba(255,255,255,0.95);
+  margin: 0;
+}
+
+
+/* Quitar líneas decorativas */
+.gold-line,
+.gold-line.small {
+  display: none !important;
+}
+
+
+/* Quitar cualquier línea decorativa del título del HERO */
+.hero h1::before,
+.hero h1::after {
+  content: none !important;
+  display: none !important;
+}
